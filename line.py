@@ -10,7 +10,10 @@ def line():
     print(f"El coeficiente X1 de su ecuación de la recta es: {x1}")
     print(f"El coeficiente X2 de su ecuación de la recta es: {x2}")
 
-    eq = f"Y = {a}X + {b}"
+   if b < 0:
+        eq = f"Y = {a}X - {abs(b)}"
+   else:
+        eq = f"Y = {a}X + {b}"
     print("\nPara la siguiente ecuación:")
     print(f"\t{eq}\n")
 
